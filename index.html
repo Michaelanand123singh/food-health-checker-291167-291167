@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Health Checker for Athletes - Scan, Track, and Optimize</title>
+  <meta name="description"
+    content="Optimize your athletic performance with our Food Health Checker! Scan your food, track your health, and achieve your fitness goals. Designed for athletes.">
+  <meta property="og:title" content="Food Health Checker for Athletes">
+  <meta property="og:description"
+    content="Optimize your athletic performance with our Food Health Checker! Scan your food, track your health, and achieve your fitness goals. Designed for athletes.">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1676385616961-d388db8ada4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxmb29kJTIwaGVhbHRoJTIwY2hlY2tlcnxlbnwxfDB8fHwxNzU2MjkxMDIwfDA&ixlib=rb-4.1.0&q=80&w=1080">
+  <meta property="og:url" content="https://www.example.com">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#34D399', // Emerald 500
+            secondary: '#6EE7B7', // Emerald 300
+            accent: '#A7F3D0', // Emerald 200
+            neutral: '#F3F4F6', // Gray 100
+            dark: '#1F2937', // Gray 800
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Food Health Checker",
+  "url": "https://www.example.com",
+  "logo": "https://res.cloudinary.com/drknkcjgh/image/upload/v1756291018/devmarket/logos/gtousmza8vb5mgkhondw.jpg",
+  "description": "Scan your food, track your health, and achieve your fitness goals.",
+  "sameAs": [
+    "https://www.facebook.com/example",
+    "https://www.twitter.com/example",
+    "https://www.instagram.com/example"
+  ]
+}
+</script>
+</head>
+
+<body class="bg-neutral font-sans antialiased">
+
+  <!-- Sticky Navigation Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300" role="banner">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6" aria-label="Main Navigation">
+      <div>
+        <a href="/" aria-label="Food Health Checker Homepage">
+          <img src="https://res.cloudinary.com/drknkcjgh/image/upload/v1756291018/devmarket/logos/gtousmza8vb5mgkhondw.jpg"
+            alt="Food Health Checker Logo" class="h-10 w-auto" />
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#features" class="hover:text-primary transition-colors duration-300">Features</a>
+        <a href="#benefits" class="hover:text-primary transition-colors duration-300">Benefits</a>
+        <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
+        <a href="#" class="bg-primary text-white py-2 px-4 rounded-lg hover:bg-secondary transition-colors duration-300">Sign
+          Up</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn md:hidden focus:outline-none" aria-label="Open Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+          </path>
+        </svg>
+      </button>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-6">
+        <a href="#features" class="block py-2 hover:text-primary transition-colors duration-300">Features</a>
+        <a href="#benefits" class="block py-2 hover:text-primary transition-colors duration-300">Benefits</a>
+        <a href="#contact" class="block py-2 hover:text-primary transition-colors duration-300">Contact</a>
+        <a href="#"
+          class="block py-2 bg-primary text-white rounded-lg text-center hover:bg-secondary transition-colors duration-300">Sign
+          Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-24 md:py-32 bg-cover bg-center"
+    style="background-image: url(https://images.unsplash.com/photo-1676385616961-d388db8ada4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxmb29kJTIwaGVhbHRoJTIwY2hlY2tlcnxlbnwxfDB8fHwxNzU2MjkxMDIwfDA&ixlib=rb-4.1.0&q=80&w=1080)"
+    aria-label="Hero Section">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="container mx-auto px-6 relative z-10 text-center text-white">
+      <img src="https://res.cloudinary.com/drknkcjgh/image/upload/v1756291018/devmarket/logos/gtousmza8vb5mgkhondw.jpg"
+            alt="Food Health Checker Logo" class="mx-auto h-20 w-auto mb-4" />
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Optimize Your Athletic Performance with Food</h1>
+      <p class="text-lg md:text-xl mb-8">Scan, track, and fuel your body for peak performance. Designed for athletes like
+        you.</p>
+      <a href="#"
+        class="bg-primary text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-secondary transition-colors duration-300">Start
+        Your Free Trial</a>
+      <p class="mt-4 text-sm">Image by <a href="https://unsplash.com/@marijazaric" class="underline"
+          target="_blank">Marija Zaric on Unsplash</a></p>
+    </div>
+  </section>
+
+  <!-- Social Proof Badges (Example) -->
+  <section class="py-12 bg-gray-50" aria-label="Social Proof">
+    <div class="container mx-auto px-6 flex flex-wrap justify-around items-center">
+      <img src="https://via.placeholder.com/120x50" alt="Featured On Badge 1" class="h-10 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity duration-300">
+      <img src="https://via.placeholder.com/120x50" alt="Featured On Badge 2" class="h-10 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity duration-300">
+      <img src="https://via.placeholder.com/120x50" alt="Featured On Badge 3" class="h-10 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity duration-300">
+      <img src="https://via.placeholder.com/120x50" alt="Featured On Badge 4" class="h-10 w-auto grayscale opacity-70 hover:opacity-100 transition-opacity duration-300">
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-16" aria-label="Features">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-dark">Key Features for Athletic Success</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Feature 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+          <img src="https://images.unsplash.com/photo-1704881986193-b4c7dfec95d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwyfHxmb29kJTIwaGVhbHRoJTIwY2hlY2tlcnxlbnwxfDB8fHwxNzU2MjkxMDIwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Healthy Food Scan" class="w-full h-64 object-cover rounded-t-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-dark">Food Scan & Analysis</h3>
+            <p class="text-gray-700 mb-4">Instantly identify the nutritional content of your meals with our AI-powered
+              scanner.</p>
+            <ul class="list-disc pl-5 text-gray-600">
+              <li>Macro breakdown</li>
+              <li>Micronutrient analysis</li>
+              <li>Allergen detection</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+          <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MXwxfHNlYXJjaHwxfHxidXNpbmVzc3xlbnwxfDB8fHwxNzU2MjM5MTIxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Personal Health Dashboard" class="w-full h-64 object-cover rounded-t-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-dark">Personal Health Dashboard</h3>
+            <p class="text-gray-700 mb-4">Track your progress, monitor key metrics, and visualize your health data in
+              one place.</p>
+            <ul class="list-disc pl-5 text-gray-600">
+              <li>Progress tracking</li>
+              <li>Customizable metrics</li>
+              <li>Data visualization</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-lg">
+          <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwyfHxidXNpbmVzc3xlbnwxfDB8fHwxNzU2MjM5MTIxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Personal Health Tracker" class="w-full h-64 object-cover rounded-t-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-dark">Personal Health Tracker</h3>
+            <p class="text-gray-700 mb-4">Log your meals, workouts, and health data to gain a comprehensive view of
+              your well-being.</p>
+            <ul class="list-disc pl-5 text-gray-600">
+              <li>Meal logging</li>
+              <li>Workout tracking</li>
+              <li>Health data integration</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="py-16 bg-gray-50" aria-label="Benefits">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-dark">Unlock Your Potential with Optimized Nutrition</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-dark">Fuel Your Performance</h3>
+          <p class="text-gray-700 mb-6">Optimize your diet with personalized recommendations tailored to your training
+            regimen and athletic goals. Gain a competitive edge through strategic nutrition.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-dark">Recover Faster, Train Harder</h3>
+          <p class="text-gray-700 mb-6">Our food analysis tools help you identify the nutrients you need to recover
+            quickly and prevent injuries. Maximize your training intensity and consistency.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-dark">Reach Your Peak Condition</h3>
+          <p class="text-gray-700 mb-6">Our health dashboard empowers you to monitor your progress, track key
+            metrics, and make informed decisions about your diet and training. Achieve your personal best.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-dark">Personalized insights</h3>
+          <p class="text-gray-700 mb-6">Receive tailored nutritional insights based on your individual needs, goals,
+            and dietary preferences. Make informed decisions about your diet and training for optimal results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Case Cards (Example) -->
+  <section class="py-16" aria-label="Use Cases">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-dark">How Food Health Checker Helps Athletes</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Use Case 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2 text-dark">Marathon Runners</h3>
+          <p class="text-gray-700 mb-4">Optimize your carbohydrate intake for sustained energy and prevent muscle
+            cramps during long-distance races.</p>
+        </div>
+
+        <!-- Use Case 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2 text-dark">Strength Training</h3>
+          <p class="text-gray-700 mb-4">Ensure adequate protein consumption for muscle repair and growth, while
+            maintaining a healthy body composition.</p>
+        </div>
+
+        <!-- Use Case 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2 text-dark">Team Sports</h3>
+          <p class="text-gray-700 mb-4">Fuel your performance with balanced nutrition that supports endurance,
+            agility, and quick recovery in demanding team environments.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider (Static HTML) -->
+  <section class="py-20 bg-gray-50" aria-label="Testimonials">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12 text-dark">What Athletes Are Saying</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide">
+          <blockquote class="text-lg italic mb-6 text-gray-700">"Food Health Checker has been a game-changer for my
+            training. I'm able to easily track my macros and ensure I'm fueling my body properly."</blockquote>
+          <div class="flex items-center justify-center">
+            <img src="https://via.placeholder.com/48x48" alt="John Doe" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <div class="font-semibold text-dark">John Doe</div>
+              <div class="text-gray-600">Marathon Runner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote class="text-lg italic mb-6 text-gray-700">"I love how easy it is to scan my meals and get a
+            detailed nutritional breakdown. It's helped me make smarter choices and improve my performance."</blockquote>
+          <div class="flex items-center justify-center">
+            <img src="https://via.placeholder.com/48x48" alt="Jane Smith" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <div class="font-semibold text-dark">Jane Smith</div>
+              <div class="text-gray-600">Triathlete</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="py-16" aria-label="Frequently Asked Questions">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-dark">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+
+        <!-- FAQ Item 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <button class="w-full text-left p-4 focus:outline-none" aria-expanded="false">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-dark">How accurate is the food scanner?</h3>
+              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </button>
+          <div class="p-4 text-gray-700 hidden">
+            Our food scanner utilizes a vast database and advanced AI algorithms to provide highly accurate nutritional
+            information.
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <button class="w-full text-left p-4 focus:outline-none" aria-expanded="false">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-dark">Is my data secure?</h3>
+              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </button>
+          <div class="p-4 text-gray-700 hidden">
+            We take your data security seriously. We use industry-standard encryption and security measures to protect
+            your information.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 bg-gray-50" aria-label="About Us">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-6 text-dark">About Food Health Checker</h2>
+        <p class="text-gray-700 mb-6">We are a team of nutritionists, athletes, and tech enthusiasts dedicated to
+          helping you optimize your athletic performance through personalized nutrition guidance. Our mission is to
+          empower athletes of all levels to reach their full potential by providing them with the tools and knowledge
+          they need to make informed decisions about their diet.</p>
+        <a href="#" class="bg-primary text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-secondary transition-colors duration-300">Learn More</a>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1556740772-1a741367b93e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MXwxfHNlYXJjaHwxfHxidXNpbmVzc3xlbnwxfDB8fHwxNzU2MjgzMDE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+          alt="About Us" class="w-full h-auto rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-primary" aria-label="Call to Action">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Ready to Fuel Your Performance?</h2>
+      <p class="text-xl text-white/80 mb-8">Start your free trial today and unlock the power of personalized
+        nutrition!</p>
+      <a href="#"
+        class="bg-white text-primary py-3 px-6 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300">Start
+        Free Trial</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16" aria-label="Contact Us">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-6 text-dark">Get in Touch</h2>
+        <p class="text-gray-700 mb-6">Have questions or need assistance? Contact our team today.</p>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your Name">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your Email">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="bg-primary text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-secondary transition-colors duration-300">Send Message</button>
+        </form>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTYzMTZ8MHwxfHNlYXJjaHwxfHxvZmZpY2V8ZW58MXwwfHx8MTc1NjI3OTY3OHww&ixlib=rb-4.1.0&q=80&w=1080"
+          alt="Contact Us" class="w-full h-auto rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12" aria-label="Footer">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-4">Food Health Checker</h3>
+          <p class="text-gray-400">Your personalized nutrition companion for athletic success.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Connect</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Facebook</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Twitter</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Food Health Checker. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // FAQ Accordion
+    const faqButtons = document.querySelectorAll('button[aria-expanded]');
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !expanded);
+        button.closest('.bg-white').querySelector('.p-4.text-gray-700').classList.toggle('hidden');
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
